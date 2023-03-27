@@ -56,9 +56,9 @@ python tokenize_dataset_rows.py \
 python finetune.py \
     --dataset_path data/alpaca \
     --lora_rank 8 \
-    --per_device_train_batch_size 6 \
+    --per_device_train_batch_size 1 \
     --gradient_accumulation_steps 1 \
-    --max_steps 52000 \
+    --max_steps 1500 \
     --save_steps 1000 \
     --save_total_limit 2 \
     --learning_rate 1e-4 \
